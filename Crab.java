@@ -16,8 +16,8 @@ public class Crab extends Actor
     public void act()
     {
         checkKeyPress();
-        checkCrabDeath();
         turnAtEdge();
+        checkCrabDeath();
     }
     
     private void checkKeyPress()
@@ -26,7 +26,7 @@ public class Crab extends Actor
         
         if (Greenfoot.isKeyDown("up"))
         {
-            moveSpeed+=3;
+            moveSpeed += 3;
         }
         
         if (Greenfoot.isKeyDown("a"))
